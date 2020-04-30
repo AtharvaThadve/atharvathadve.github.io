@@ -1,0 +1,65 @@
+<body>
+    
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<!--include firebse databse-->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBVRIXq1lCrt7jzBuCGSmNOpSV91OrSeQ8",
+    authDomain: "chat-corner-573fc.firebaseapp.com",
+    databaseURL: "https://chat-corner-573fc.firebaseio.com",
+    projectId: "chat-corner-573fc",
+    storageBucket: "chat-corner-573fc.appspot.com",
+    messagingSenderId: "72965078771",
+    appId: "1:72965078771:web:b834047dc725d744160186",
+    measurementId: "G-7SJ1FYEKDF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var myName = prompt("Enter your name");
+
+  function sendMessage(){
+      var message = document.getElementById("message").value
+
+      firebase.database().ref("messages").push().set({
+          "sender": myName,
+          "message": message
+      })
+
+      return false;
+  }
+
+  firebase.database().ref("message").on("child_added", function (snapshot) {
+      var html = "";
+      html += "<li>";
+      
+      html += snapshot.val().sender + ":" + snapshot.val().message;
+      html += "</li>";
+
+      document.getElementById("messages").innerHTML += html;
+
+  });
+
+
+</script>
+
+<form onsubmit="return sendMessage();">
+<input id="message" placeholder="Enter message" autocomplete="off">
+
+<input type="submit">
+</form>
+
+<ul id="messages"></ul>
+
+</body>
