@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
+<title>MAP</title>
+<html> 
+  <head> 
+    <style> 
+      #map { 
+        height: 400px; 
+        width: 100%; 
+       } 
+    </style> 
+  </head> 
+  <body> 
+    <p>My Google map location</p> 
+    <div id="map"></div> 
+    <script> 
+      function initMap() { 
+        var test= {lat: -25.363, lng: 131.044}; 
+        var map = new google.maps.Map(document.getElementById('map'), { 
+          zoom: 4, 
+          center: test 
+        }); 
+        var marker = new google.maps.Marker({ 
+          position: test, 
+          map: map 
+        }); 
+      } 
+    </script> 
+    <script async defer 
+    src= 
+"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> 
+    </script>
+    
+    <script>
+      document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+          console.log('You cannot inspect Element');
+           return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+          console.log('You cannot inspect Element');
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+          console.log('You cannot inspect Element');
+          return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+          console.log('You cannot inspect Element');
+          return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+          console.log('You cannot inspect Element');
+          return false;
+        }
+      } 
+      // prevents right clicking
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      </script>
+  </body> 
+</html> 

@@ -1,309 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Atharva Thadve</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="30x30">
-<title>Mr. Atharva</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
 <style>
-
-* {
-    margin: 0;
-}
-html, body {
-    height: 100%;
-}
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-    margin-bottom: -142px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  /* .push must be the same height as footer */
-    height: 142px; 
-}
-.site-footer {
-  background: #343838;
-}
-
-
-* { box-sizing: border-box; }
-
-body {
-  background-color: #31e8eef3;
-  font-size: 16px;
-}
-
-.footer {
-   position: bottom;
-   left: 0;
-   bottom: 0;
-   width: 80%;
-   color: white;
-   text-align: bottom;}
-
-#main-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#title {
-  color:white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-}
-
-#btn {
-  position: fixed;
-  z-index: 5;
-  top: 15px;
-  left: 15px;
-  cursor: pointer;
-  -webkit-transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-  transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-}
-
-#btn div {
-  width: 35px;
-  height: 2px;
-  margin-bottom: 8px;
-  background-color: rgb(6, 14, 11);
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
-  transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
-}
-
-#btn:hover > div { box-shadow: 0 0 1px #00DFFC; }
-
-#btn.active { left: 230px; }
-
-#btn.active div { background-color: #343838; }
-
-#btn.active:hover > div { box-shadow: 0 0 1px #343838; }
-
-#btn.active #top {
-  -webkit-transform: translateY(10px) rotate(-135deg);
-  -ms-transform: translateY(10px) rotate(-135deg);
-  transform: translateY(10px) rotate(-135deg);
-}
-
-#btn.active #middle {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-#btn.active #bottom {
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  -ms-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-#box {
-  position: fixed;
-  z-index: 4;
-  overflow: auto;
-  top: 0px;
-  left: -275px;
-  width: 275px;
-  opacity: 0;
-  padding: 10px 0px;
-  height: 100%;
-  background-color: #696777;
-  color: #343838;
-  -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
-}
-
-#box.active {
-  left: 0px;
-  opacity: 1;
-}
-
-#items {
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#items .item {
-  position: relative;
-  cursor: pointer;
-  font-size: 2em;
-  padding: 15px 30px;
-  -webkit-transition: all 250ms;
-  transition: all 250ms;
-}
-
-#items .item:hover {
-  padding: 15px 45px;
-  background-color: rgba(29, 219, 233, 0.781);
-}
-
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-</head>
+<body class="w3-light-grey">
 
-<body>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-  <!--social media-->
-  <div class="social" align="right" > 
-    <a href="https://www.facebook.com/"> <img src="img/social-facebook-box-white-icon.png" alt="img">  </a>
-    
-    <a href="https://www.instagram.com/?hl=en"> <img src="img/Instagram-icon.png" alt="img" > </a>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">MR. A</span></p>
+  <img src="img/logo_invert.png" alt="logo_invert" style="width:200px;height: 200px;">
+  <br>
+  <form method="get" action="http://www.google.com/search">
+    <table border="0" align="center" cellpadding="0">
+    <input type="text"   name="q" size="25"
+    maxlength="255" value="" placeholder="Search anything...." />
+    <input type="submit" value="Google Search" />
+    </form>
+</header>
 
-    <a href="https://twitter.com/home"><img src="img/twitter-icon.png" alt="img">  </a>
+<!-- Grid -->
+<div class="w3-row">
 
-    <a href="https://www.youtube.com/channel/UCAMI3fTRUk9NKMXxLt49ruA"><img src="img/YouTube-icon.png" alt="img"> </a>
-
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="img/Screenshot (21).png" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2020</span></h5>
     </div>
 
-    <!---Online Compiler-->
-    <div align="right">
-      <a href="https://www.programiz.com/python-programming/online-compiler/"> <button style=padding:2px;width:10em;>Python Compiler</button> </a>
-      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic"> <button style=padding:2px;width:10em;>Html Compiler</button> </a>
-    
+    <div class="w3-container">
+      <p>Very welcome to my Blog.This blog discribes my info.Ganesha is my starting of day.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE </b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments </b> <span class="w3-tag">0</span></span></p>
+        </div>
       </div>
+    </div>
+  </div>
+  <hr>
 
-      <!--searchbox-->
-    <form method="get" action="http://www.google.com/search" align="right" style="width: 50px;" >
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="img/IMG_20190107_140717.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Back to School..., <span class="w3-opacity">Jan 15, 2019</span></h5>
+    </div>
 
-      <div style="border:1px solid  #31e8eef3;padding:4px;width:30em;">
-      <table border="0" align="right" cellpadding="0">
-      <tr><td>
-      <input type="text"   name="q" size="25"
-      maxlength="255" value="" placeholder="Search anything..." />
-      <input type="submit" value="Google Search" /></td></tr>
-      <tr><td align="center" style="font-size:75%">
-      <input type="radio"  name="sitesearch" value="" checked/>The Web search
-      <input type="radio"  name="sitesearch"
-      value="yoursite.com"  /> Only my Site<br />
-      </td></tr></table>
+    <div class="w3-container">
+      <p>School memories are best memories in life.Those days never one can forget all his life.Time to enjoy all life within those days.Which gives pleasure that is very differ.That the platinum time to spend ever in life...</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE </b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments</b> <span class="w3-badge">2</span></span></p>
+        </div>
       </div>
-      
-      </form>
-      
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
 
-
-<!--Text-->
-    <div>
-      <img src="img/images.jpg" alt="img" style="border-radius: 250px; align-items: center;">
-     </div>
-     <div style="color: purple; font-style: italic; font-size: 30px;">
-       Atharva Thadve
-     </div>
-     <hr>
-     <p style="font-size: 20px; font-style: oblique;"> <br> Hello here,I'm presenting my first websit . Here I'm presenting you python compiler with html compiler .New projects of <b>python-programming</b> will be uploaded soon... </p>
-      
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="img/20200305_213520.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b><br><span class="w3-opacity">Atharva J Thadve</span></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of passion and hobbies. I want to share my world with you.</p>
+    </div>
+  </div><hr>
   
-
-
-<!--panel text-->  
-
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>PASSIONS</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="img/python.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Python</span><br>
+        <span>Making projects with fun</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="img/maths.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mathathematics</span><br>
+        <span>Playing with nums and figs</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="img/physics.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Physics</span><br>
+        <span>Understanding principle of Nature</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="img/html.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">HTMLs</span><br>
+        <span>Web Development</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Other Site to visit</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom" onclick="window.location.href='https://searchgoogle.github.io/';">Search Google</span>
+      <br> 
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom" onclick="">atharvathadve200424@gamil.com</span>
+      <br>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom" onclick="window.location.href='https://www.programiz.com/python-programming/online-compiler/';">Python Complier</span>
+      <br>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom" onclick="window.location.href='https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic';">HTML Compiler</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
 </div>
-</div>
-<div id="btn">
-  <div id='top'></div>
-  <div id='middle'></div>
-  <div id='bottom'></div>
-</div>
-<div id="box" style="font-size: 15px;">
-  <div id="items" style="font-size: 15px;">
-    <a href="Home.html"> <div class="item"> Home </div>      </a>
-    <a href="programming.html"> <div class="item">Programing</div>  </a>
-    <a href="videos.html"> <div class="item">Vedios</div>      </a>
-    <a href="about.html"> <div class="item">About Us</div>    </a>
-    <div style="padding: 20px;">Write G-mail at:<a href="">atharvathadve200424@gmail.com</a></div>
+
+<!-- END GRID -->
+</div><br>
+
+<div class="w3-card w3-margin">
+  <div class="w3-container w3-padding">
+    <h4>Location</h4>
+  </div>
+  <div class="w3-container w3-white">
+  <p>
+    <img src="img/map.jpg" alt="img" style="width:200px;padding: 15px -1px;" onclick="window.location.href='map.html';">
+    
+    <br> 
+    
+  </p>
   </div>
 </div>
 
-<!---Java script-->
-<script>
-var sidebarBox = document.querySelector('#box');
-var sidebarBtn = document.querySelector('#btn');
-var pageWrapper = document.querySelector('#main-content');
+<!-- END Introduction Menu -->
+</div>
 
-sidebarBtn.addEventListener('click', function(event) {
+<!-- END GRID -->
+</div><br>
 
-		if (this.classList.contains('active')) {
-				this.classList.remove('active');
-				sidebarBox.classList.remove('active');
-		} else {
-				this.classList.add('active');
-				sidebarBox.classList.add('active');
-		}
-});
-
-pageWrapper.addEventListener('click', function(event) {
-
-		if (sidebarBox.classList.contains('active')) {
-				sidebarBtn.classList.remove('active');
-				sidebarBox.classList.remove('active');
-		}
-});
-
-window.addEventListener('keydown', function(event) {
-
-		if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
-				sidebarBtn.classList.remove('active');
-				sidebarBox.classList.remove('active');
-		}
-});
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46156385-1', 'cssscript.com');
-  ga('send', 'pageview');
-
-</script>
-
-<!---Chat corner-->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5eae68f810362a7578be822b/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-
-<!--Comment box-->
-<footer style="padding-bottom: initial;">
-   <!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%249PnvWHfZLkAgKI1R2uPrT1"+"&opts=16862&num=10&ts=1588148883032");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
+<!-- END w3-content -->
+</div>
 
 
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='https://www.facebook.com/';">FB </button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='https://www.instagram.com/?hl=en';">INSTA </button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='https://twitter.com/home';">TWT </button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='https://youtu.be/xxRD2bXd8g8';">UTUBE </button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom"><a href="comment.html" style="color: aqua;">COMMENTBOX</a></button>
+  <p>Powered by <a style="color: aqua;">MR. A</a></p>
+
+  
 </footer>
 
-
-
-
-
-
+<script>
+  document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+      console.log('You cannot inspect Element');
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+  } 
+  // prevents right clicking
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
 </body>
+
+
 </html>
