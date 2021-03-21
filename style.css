@@ -5,15 +5,15 @@ body{
 .container {
   position: relative;
   text-align: right;
-  color: white;
+  color: rgb(245, 252, 255);
   padding: 2px 5px;
   }
-  .centre{
+  .top-rightlogo{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 10%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    
   }
 
   .top-right{
