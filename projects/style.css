@@ -1,0 +1,45 @@
+.vertical {
+  border-left: 3px solid rgb(9, 10, 10);
+  height: 300%;
+  position:absolute;
+  left: 20%;
+}
+
+h2{
+  color:  #39CCCC;
+  font-family:monospace;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  transition: all 0.4s ease;
+  color: white;
+  width: 165%;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(250, 248, 248);
+}
+
+.btn01 {
+  background: #39CCCC;
+  color: white;
+  border-color: rgba(24, 22, 23, 0.856);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 15px;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 25px;
+}
