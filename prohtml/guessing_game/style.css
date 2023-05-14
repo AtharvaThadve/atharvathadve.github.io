@@ -1,0 +1,47 @@
+*{margin: 0;
+padding: 0;}
+
+body{
+    background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , rgb(38, 0, 255));
+}
+
+.box{
+  border: 3px solid black;
+  max-width: 400px;
+  min-height: 250px;
+  margin-left: 30%;
+  margin-top: 10%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: 5px 10px #646464;
+}
+
+.content{
+  margin: 5%;
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content button{
+  padding: 7px;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0.8;
+  border-bottom-color: rgb(9, 255, 255);
+  border-top-color: rgb(250, 6, 87);
+  margin-top: 5%;
+  color: rgb(221, 216, 216);
+  background: #000;
+}
+
+.content input{
+  padding-left: 50px;
+  padding-top: 10px;
+  margin-top: 5%;
+  border-radius: 20px;
+  opacity: 0.6;
+  box-shadow: 5px 5px #fdfcfc;
+}
