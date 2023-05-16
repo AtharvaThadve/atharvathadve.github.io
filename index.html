@@ -27,13 +27,13 @@
         </label>
     </div>
     <div class="bg1" style="position: relative;">
-    <img src="img/1.png" alt="" class="logo" style="z-index: 2;position: absolute;">
-    <img src="img/bg1.jpg" alt="" style="width: 100%;z-index: 1;position: absolute;">
+        <img src="img/1.png" alt="" class="logo" style="z-index: 2;position: absolute;">
+        <img src="img/bg1.jpg" alt="" style="width: 100%;z-index: 1;position: absolute;opacity: 0.5;">
+        <img src="img/profile.png" alt="" id="profileimg" style="z-index: 2;position: absolute;">
     </div>
+
     <!---Left Side Links and popups-->
     <div class="mainContent">
-        <hr>
-        <hr>
         <h2>Hi</h2> there! My name is Atharva, and I'm a web developer and coding enthusiast. With 6 years of experience
         in the field, I've honed my skills in HTML, CSS, JavaScript, and other programming languages to create dynamic
         and visually stunning websites.
@@ -48,27 +48,36 @@
 
         When I'm not coding, you can usually find me hiking in the great outdoors or curled up with a good book. Thanks
         for stopping by my website, and I look forward to connecting with you!
-        
+
         <hr>
     </div>
 
-    <div class="leftContent">
-        <h2>REFRESHMENTS</h2>
-        <div class="leftLinks">
-            <h4>1.<a href="JavaScript:newPopup('prohtml/guessing_game/guessing_game.html');">Gaussing Game</a></h4>
+
+    <div class="codePanel">
+        <h1 style="margin-left: 40%;margin-top: 5%;font-size:40px;color: rgb(0, 0, 0);margin-top: 10%;"
+            class="fa fa-file-code-o">
+            <u>Project Section</u>
+        </h1>
+        <div style="display: flex;margin-top: 13%;">
+            <img src="img/python.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
+            <img src="img/java.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
+            <img src="img/js.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
+            <img src="img/css3-alt.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
         </div>
     </div>
 
-    <h1 style="margin-left: 25%;margin-top: 5%;font-size:40px;color: rgb(0, 0, 0);" class="fa fa-file-code-o"> <u>Project
-            Section</u> </h1>
-    <div class="codePanel">
-
-        <img src="img/python.svg" alt="">
-        <img src="img/java.svg" alt="">
-        <img src="img/js.svg" alt="">
-        <img src="img/css3-alt.svg" alt="">
+    <div>
+        <h1
+            style="margin-top: 20%;position: absolute;z-index: 2;margin-left: 45%;color: aliceblue;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            Gaming Mode</h1>
+        <img src="img/bg4.jpg" alt="" style="margin-top: 20%;width: 100%;height: 35pc;z-index: 1;position: absolute;">
+        <div>
+            <div style="margin-left: 3%;margin-top: 25%;z-index: 2;position: absolute;">
+                <img src="img/guessing_game.png" alt="" style="width: 300px;height: 200px;border-radius: 6px;cursor: pointer;" onclick=guessing_game()>
+                <p style="color: aliceblue;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: 4px;">Guess The Number From My Mind</p>
+            </div>
+        </div>
     </div>
-
 
     <footer class="footer">
         <div style="display: flex;padding: 20px;margin-left: 10px;">
