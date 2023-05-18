@@ -12,24 +12,29 @@
 </head>
 
 <body>
-    <div class="topnav">
+    <div class="topnav" >
         <div class="tags">
-            <li>
-                <a href="" class="fa fa-home" style="font-size:20px">Home</a>
-                <a href="" class="fa fa-flash" style="font-size:20px">Games</a>
-                <a href="" class="fa fa-file-code-o" style="font-size:20px">Projects</a>
-                <a href="" class="fa fa-comments" style="font-size:20px">Contacts</a>
+            <li id="myTopnav">
+                <a href="#home" class="active" class="fa fa-home" style="font-size:20px">Home</a>
+                <a href="#news" class="fa fa-flash" style="font-size:20px">Games</a>
+                <a href="#contact" class="fa fa-file-code-o" style="font-size:20px">Projects</a>
+                <a href="#about" class="fa fa-comments" style="font-size:20px">Contacts</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </li>
+            <label class="switch" style="overflow: hidden;">
+                <input type="checkbox" onclick="darkMode()">
+                <span class="slider"></span>
+            </label>
         </div>
-        <label class="switch">
-            <input type="checkbox" onclick="darkMode()">
-            <span class="slider"></span>
-        </label>
     </div>
+    </div>
+
     <div class="bg1" style="position: relative;">
         <img src="img/1.png" alt="" class="logo" style="z-index: 2;position: absolute;">
-        <img src="img/bg1.jpg" alt="" style="width: 100%;z-index: 1;position: absolute;opacity: 0.5;">
-        <img src="img/profile.png" alt="" id="profileimg" style="z-index: 2;position: absolute;">
+        <img src="img/bg1.jpg" alt="" style="width: 100%;z-index: 1;position: absolute;top: 0;overflow: hidden;">
+        <img src="img/profile.jpg" alt="" id="profileimg" style="z-index: 2;position: absolute;border-radius: 50px;">
     </div>
 
     <!---Left Side Links and popups-->
@@ -49,41 +54,44 @@
         When I'm not coding, you can usually find me hiking in the great outdoors or curled up with a good book. Thanks
         for stopping by my website, and I look forward to connecting with you!
 
-        Thanking you...!! 
-        Enjoy the Games
-
         <hr>
     </div>
 
 
-    <div class="codePanel">
-        <h1 style="margin-left: 40%;margin-top: 5%;font-size:40px;color: rgb(0, 0, 0);margin-top: 10%;"
-            class="fa fa-file-code-o">
-            <u>Project Section</u>
-        </h1>
-        <div style="display: flex;margin-top: 13%;">
-            <img src="img/python.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
+    <div class="codePanel" style="overflow:visible;">
+        <div style="text-align: center;">
+            <h1 style="font-size:40px;color: rgb(0, 0, 0);margin-top: 10%;" class="fa fa-file-code-o ">
+                <u>Project Section</u>
+            </h1>
+        </div>
+        <div style="margin-top: 13%;">
+            <img src="img/python.svg" alt="" style=" margin-left:10pc;width: 150px;height: 150px;">
             <img src="img/java.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
             <img src="img/js.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
             <img src="img/css3-alt.svg" alt="" style=" margin-left: 10pc;width: 150px;height: 150px;">
         </div>
     </div>
 
-    <div>
+    <div class="Gaming_section">
         <h1
             style="margin-top: 20%;position: absolute;z-index: 2;margin-left: 45%;color: aliceblue;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
             Gaming Mode</h1>
         <img src="img/bg4.jpg" alt="" style="margin-top: 20%;width: 100%;height: 35pc;z-index: 1;position: absolute;">
         <div>
-            <div style="margin-left: 3%;margin-top: 25%;z-index: 2;position: absolute;">
-                <img src="img/guessing_game.png" alt="" style="width: 300px;height: 200px;border-radius: 6px;cursor: pointer;" onclick=guessing_game()>
-                <p style="color: aliceblue;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: 4px;">Guess The Number From My Mind</p>
+            <div class="gameimg">
+                <div style="margin-left: 3%;margin-top: 25%;z-index: 2;position: absolute;">
+                    <img src="img/guessing_game.png" alt=""
+                        style="width: 100%;height: 200px;border-radius: 6px;cursor: pointer;" onclick=guessing_game()>
+                    <p style="color: aliceblue;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: 4px;">Guess
+                        The
+                        Number From My Mind</p>
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="footer">
-        <div style="display: flex;padding: 20px;margin-left: 10px;">
+        <div style="padding: 20px;margin-left: 10px;overflow: hidden;" class="footer_links">
             <block style="margin-bottom: 10%;margin-left: 2%;">
                 <h2 style="margin-bottom: 15px;"> Stay Updated:</h2>
                 [Newsletter Signup Form]
@@ -112,9 +120,9 @@
             <a href=""><img src="img/github.svg" alt=""></a>
         </div>
 
-        <p
+        <div
             style="text-align: center;background-color: rgb(0, 81, 202);padding-top: 15px;padding-bottom: 15px;color: aliceblue;">
-            © 2023 atharvathadve.github.io. All Rights Reserved.</p>
+            © 2023 atharvathadve.github.io. All Rights Reserved.</div>
     </footer>
 
     <!---Scripting-->
