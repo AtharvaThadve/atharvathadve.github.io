@@ -7,20 +7,26 @@
 .topnav {
     background: linear-gradient(to bottom right, #04a9f5, rgba(76, 3, 247, 0.801));
     opacity: 0.8;
-    padding: 20px;
     text-align: center;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
+    list-style: none;
+    text-decoration: none;
+   
 }
 
+.tags{
+    margin-top: 1%;
+}
 .tags a {
+    font-family: 'BIZ UDMincho';font-size: 22px;
     list-style: none;
     color: rgb(250, 250, 250);
     padding: 5px;
-    margin-left: 10px;
+    margin-top: 5%;
     text-decoration: none;
 }
 
@@ -37,9 +43,10 @@
 
 @media only screen and (max-width:600px) {
     .topnav {
-        min-width: 100%;
+        min-width: 50%;
         padding: 0;
         overflow: hidden;
+        z-index: 3;
     }
 
     .topnav a {
@@ -86,9 +93,9 @@
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-left: 50%;
-    margin-top: 5%;
+    margin-left: 80%;
     overflow: hidden;
+    z-index: 4;
 }
 
 .switch input {
@@ -142,7 +149,7 @@ input:checked+.slider:before {
 
 /* logo css */
 .logo {
-    margin-left: 35%;
+    margin-left: 10%;
     margin-right: 30%;
     margin-top: 10%;
     animation-name: logo;
@@ -176,23 +183,7 @@ input:checked+.slider:before {
         width: 100px;
         opacity: 0.4;
     }
-
-    25% {
-        width: 200px;
-        opacity: 0.5;
-    }
-
-    50% {
-        width: 300px;
-        opacity: 0.7;
-    }
-
-    75% {
-        width: 400px;
-        opacity: 0.8;
-    }
-
-    100% {
+     100% {
         width: 434px;
         opacity: 0.9;
     }
