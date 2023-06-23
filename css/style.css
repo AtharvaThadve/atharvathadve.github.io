@@ -175,6 +175,7 @@ input:checked+.slider:before {
         min-width: 100px;
         padding: 0;
         margin-left: 30%;
+        margin-top: 80%
     }
 }
 
@@ -202,7 +203,7 @@ input:checked+.slider:before {
 
 @media only screen and (max-width:600px) {
     .mainContent {
-        margin-top: 120%;
+        margin-top: 170%;
         margin-left: 10%;
         margin-right: 12%;
     }
@@ -215,7 +216,7 @@ input:checked+.slider:before {
     .gameimg img,
     p {
         margin-top: 15%;
-        margin-left: 30%;
+        overflow: hidden;
     }
 }
 
@@ -224,12 +225,16 @@ input:checked+.slider:before {
     .codePanel img {
         max-width: 50px;
         height: 10px;
+        overflow: hidden;
     }
 }
 
 @media only screen and (width:700px) {
     .codePanel {
         display: flex;
+    }
+    .Gaming_section{
+       display: none;
     }
 }
 
@@ -265,5 +270,11 @@ input:checked+.slider:before {
     .footer_links {
         display: flex;
         overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer img{
+        display: none;
     }
 }
