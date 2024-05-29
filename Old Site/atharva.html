@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Autour One" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <title>Mr.A</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="tags">
+            <li id="myTopnav">
+                <a href="#home" class="active" style="font-size: 20px">#Home</a>
+                <a href="#news" style="font-size: 20px">#Games</a>
+                <a href="#contact" style="font-size: 20px">#Projects</a>
+                <a href="#about" style="font-size: 20px">#Contacts</a>
+                <div style="display: flex; margin-left: 7%">
+                    <div style="color: #ffa8b6">
+                        <h2>Mr.</h2>
+                    </div>
+                    <div style="color: #51e2f5">
+                        <h1>A</h1>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <label class="switch" style="overflow: hidden">
+                    <input type="checkbox" onclick="darkMode()" />
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </div>
+    </div>
+
+    <div class="bg1" style="position: relative">
+        <img src="img/1.png" alt="" class="logo" style="z-index: 2; position: absolute" />
+        <img src="img/bga.jpg" style="
+          width: 100%;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          overflow: hidden;
+          max-height: 700px;
+        " />
+        <img src="img/profile.jpg" alt="" id="profileimg" style="z-index: 2; position: absolute; border-radius: 50px" />
+        <div style="
+          z-index: 5;
+          position: absolute;
+          color: aqua;
+          margin-left: 60%;
+          margin-top: 25%;
+        ">
+            <h1>Hello World</h1>
+        </div>
+    </div>
+
+    <!---Left Side Links and popups-->
+    <div class="mainContent">
+        <h2>Hi</h2>
+        there! My name is Atharva, and I'm a web developer and coding enthusiast.
+        With 6 years of experience in the field, I've honed my skills in HTML,
+        CSS, JavaScript, and other programming languages to create dynamic and
+        visually stunning websites. I'm passionate about all things coding, and I
+        love staying up-to-date on the latest web development trends and
+        technologies. Whether it's designing user-friendly interfaces or crafting
+        complex algorithms, I'm always eager to take on new challenges and expand
+        my knowledge. Through my website, I aim to share my expertise and insights
+        with other coding enthusiasts and aspiring web developers. From tutorials
+        and coding tips to reviews of the latest software and tools, I hope to
+        create a community of like-minded individuals who share a love for all
+        things code. When I'm not coding, you can usually find me hiking in the
+        great outdoors or curled up with a good book. Thanks for stopping by my
+        website, and I look forward to connecting with you!
+
+        <hr />
+    </div>
+
+    <div class="codePanel" style="overflow: visible">
+        <div style="text-align: center">
+            <h1 style="font-size: 40px; color: rgb(0, 0, 0); margin-top: 10%" class="fa fa-file-code-o">
+                <u>Project Section</u>
+            </h1>
+        </div>
+        <div style="margin-top: 13%">
+            <img src="img/python.svg" alt="" style="margin-left: 10pc; width: 150px; height: 150px" />
+            <img src="img/java.svg" alt="" style="margin-left: 10pc; width: 150px; height: 150px" />
+            <img src="img/js.svg" alt="" style="margin-left: 10pc; width: 150px; height: 150px" />
+            <img src="img/css3-alt.svg" alt="" style="margin-left: 10pc; width: 150px; height: 150px" />
+        </div>
+    </div>
+
+    <div class="Gaming_section">
+        <h1 style="
+          margin-top: 20%;
+          position: absolute;
+          z-index: 2;
+          margin-left: 45%;
+          color: aliceblue;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        ">
+            Gaming Mode
+        </h1>
+        <img src="img/bg4.jpg" alt="" style="
+          margin-top: 20%;
+          width: 100%;
+          height: 35pc;
+          z-index: 1;
+          position: absolute;
+        " />
+        <div>
+            <div class="gameimg">
+                <div style="
+              margin-left: 3%;
+              margin-top: 25%;
+              z-index: 2;
+              position: absolute;
+            ">
+                    <img src="img/guessing_game.png" alt="" style="
+                width: 100%;
+                height: 200px;
+                border-radius: 6px;
+                cursor: pointer;
+              " onclick="guessing_game()" />
+                    <p style="
+                color: aliceblue;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 4px;
+              ">
+                        Guess The Number From My Mind
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div style="padding: 20px; margin-left: 10px; overflow: hidden" class="footer_links">
+            <block style="margin-bottom: 10%; margin-left: 2%">
+                <h2 style="margin-bottom: 15px">Stay Updated:</h2>
+                <a href="#codePanel">#Projects</a>
+            </block>
+            <block style="margin-bottom: 10%; margin-left: 2%">
+                <h2 style="margin-left: 4%; margin-bottom: 15px">Contact Us:</h2>
+                <h3>Gmail:</h3>
+                <a href="">atharvathadve200424@gmail.com</a>
+            </block>
+            <block style="margin-bottom: 10%; margin-left: 2%">
+                <h2 style="margin-left: 4%; margin-bottom: 15px">
+                    Explore Our Site:
+                </h2>
+                #GamePanel #CodePanel
+            </block>
+            <block style="margin-bottom: 10%; margin-left: 2%">
+                <h2 style="margin-left: 4%; margin-bottom: 15px">
+                    Related Resources:
+                </h2>
+                Yet to made
+            </block>
+        </div>
+        <div class="social" style="margin-left: 45%">
+            <a href=""><img src="img/instagram.svg" alt="" /></a>
+            <a href=""><img src="img/linkedin-in.svg" alt="" /></a>
+            <a href=""><img src="img/facebook-f.svg" alt="" /></a>
+            <a href=""><img src="img/github.svg" alt="" /></a>
+        </div>
+
+        <div style="
+          text-align: center;
+          background-color: rgb(0, 81, 202);
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: aliceblue;
+        ">
+            © 2023 atharvathadve.github.io. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!---Scripting-->
+    <script type="text/javascript">
+        // Popup window code
+        function newPopup(url) {
+            popupWindow = window.open(
+                url,
+                "popUpWindow",
+                "height=400,width=700,left=350,top=100,resizable=yes,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no,status=no"
+            );
+        }
+    </script>
+</body>
+
+</html>
